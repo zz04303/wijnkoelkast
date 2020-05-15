@@ -175,7 +175,7 @@ void setup() {
   Serial.begin(115200);
   Serial << endl << endl;
 
-  Homie_setFirmware("control-temp-relay", "2.0.0");
+  Homie_setFirmware("control-temp-relay", "2.0.1");
   //1.1.3 - met nieuwe ESP8266 2.4.0-rc2
   //1.1.4 - eerste versie met light sensor er bij
   //1.1.5 - relay 'modulatie' verwarming te krachtig
@@ -200,6 +200,7 @@ void setup() {
   //2.0.0  - 20200414:
   //         Volledige temp regeling, V1.x is alleen regeling voor warmte element, koude is hard met potmeter ingesteld
   //         Add heap / memory topic and logging at start
+  //2.0.1  - 20200515: Aanpassingen voor Platformio en Github
 
   Homie.getLogger() << "Compiled: " << __DATE__ << " | " << __TIME__ << " | " << __FILE__ <<  endl;
   Homie.getLogger() << "ESP CoreVersion       : " << ESP.getCoreVersion() << endl;
